@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CBT SMAN 10 Toraja Utara</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f1f5f9;color:#172554}
+header{background:#153b65;color:white;text-align:center;padding:30px 15px}
+main{max-width:450px;margin:35px auto;padding:20px}
+.card{background:white;padding:25px;border-radius:14px;box-shadow:0 3px 15px #0001}
+h2{text-align:center}
+input,button{width:100%;padding:13px;margin:9px 0;border-radius:7px}
+input{border:1px solid #cbd5e1}
+button{background:#153b65;color:white;border:0;cursor:pointer}
+footer{text-align:center;color:#64748b;font-size:12px;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h2>CBT SMAN 10 TORAJA UTARA</h2>
+<p>Computer Based Test</p>
+</header>
+<main>
+<div class="card">
+<h2>LOGIN PESERTA</h2>
+<p>Silakan masuk menggunakan akun Anda.</p>
+<input id="email" type="email" placeholder="Email pengguna">
+<input id="password" type="password" placeholder="Password">
+<button onclick="login()">MASUK</button>
+<p id="pesan"></p>
+</div>
+</main>
+<footer>UPT SMAN 10 TORAJA UTARA © 2026</footer>
+<script>
+async function login(){
+ const pesan=document.getElementById('pesan');
+ pesan.textContent='Sistem login akan dihubungkan pada tahap berikutnya.';
+}
+</script>
+</body>
+</html>
